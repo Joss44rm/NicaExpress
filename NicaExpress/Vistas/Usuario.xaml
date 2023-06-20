@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NicaExpress.Vistas.Usuario"
+             Title="Usuario">
+    <VerticalStackLayout>
+        
+        <Label Text="Ingrese su Nombre" 
+               FontSize="Title"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="White"></Label>
+        <Entry x:Name="Nombre"
+               Placeholder="Nombre"
+               FontSize="Medium"
+               Margin="10,5,0,0"
+               BackgroundColor="Beige"></Entry>
+        <Label Text="Ingrese su Correo" 
+               FontSize="Title"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="White"></Label>
+        <Entry x:Name="EntCorreo"
+               Placeholder="Correo"
+               FontSize="Medium"
+               Margin="10,5,0,0"
+               BackgroundColor="Beige"></Entry>
+        <Label Text="Ingrese su Contraseña" 
+               FontSize="Title"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="White"></Label>
+        <Entry x:Name="Entcontraseña"
+               Placeholder="Contraseña"
+               FontSize="Medium"
+               Margin="10,5,0,0"
+               BackgroundColor="Beige"></Entry>
+    </VerticalStackLayout>
+</ContentPage>

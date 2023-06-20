@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NicaExpress.Nicaexpress"
+             Title="Nicaexpress">
+    <VerticalStackLayout>
+        <Button Text="Ingresar Usuario" Margin="5" x:Name="BtnUsuario" Clicked="BtnUsuario_Clicked"></Button>
+        <Button Text="Lista de Transportes y Horarios" Margin="5" x:Name="BtnTransporte" Clicked="BtnTransporte_Clicked"></Button>
+        <Button Text="Reservacion" Margin="5" x:Name="BtnReservacion" Clicked="BtnReservacion_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
