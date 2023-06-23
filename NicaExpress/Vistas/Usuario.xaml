@@ -4,7 +4,7 @@
              x:Class="NicaExpress.Vistas.Usuario"
              Title="Usuario">
     <VerticalStackLayout>
-        
+
         <Label Text="Ingrese su Nombre" 
                FontSize="Title"
                TextColor="Black"

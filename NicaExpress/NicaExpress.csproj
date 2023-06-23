@@ -49,6 +49,52 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\achuapa.jpg" />
+	  <None Remove="Resources\Images\elregadio.jpg" />
+	  <None Remove="Resources\Images\elsauce.jpg" />
+	  <None Remove="Resources\Images\Estelib.jpg" />
+	  <None Remove="Resources\Images\jalapa.jpg" />
+	  <None Remove="Resources\Images\jinotega.jpg" />
+	  <None Remove="Resources\Images\laconcordia.jpg" />
+	  <None Remove="Resources\Images\managua.jpg" />
+	  <None Remove="Resources\Images\masaya.jpg" />
+	  <None Remove="Resources\Images\ocotal.jpg" />
+	  <None Remove="Resources\Images\pueblonuevo.jpg" />
+	  <None Remove="Resources\Images\quilali.jpg" />
+	  <None Remove="Resources\Images\sanjuandelimay.jpg" />
+	  <None Remove="Resources\Images\sanjuanderiococo.jpg" />
+	  <None Remove="Resources\Images\sanrafaeldelnorte.jpg" />
+	  <None Remove="Resources\Images\santacruz.jpg" />
+	  <None Remove="Resources\Images\somoto.jpg" />
+	  <None Remove="Resources\Images\terminalnorte.jpg" />
+	  <None Remove="Resources\Images\terminalsur.jpg" />
+	  <None Remove="Resources\Images\wiwili.jpg" />
+	  <None Remove="Resources\Images\yali.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\contacts.png" />
+	  <MauiImage Include="Resources\hamburguer.png" />
+	  <MauiImage Include="Resources\reminders.png" />
+	  <MauiImage Include="Resources\todo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Nicaexpress.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -58,12 +104,20 @@
 	  <MauiXaml Update="Vistas\Reservacion.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Vistas\Transporte.xaml">
+	  <MauiXaml Update="Vistas\terminalnorte.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Vistas\terminalsur.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Vistas\Usuario.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="VistasTerminalSur\" />
+	  <Folder Include="VistasTerminalNorte\" />
 	</ItemGroup>
 
 </Project>

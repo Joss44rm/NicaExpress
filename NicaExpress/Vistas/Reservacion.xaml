@@ -2,76 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NicaExpress.Vistas.Reservacion"
-             Title="Reservacion">
-    <VerticalStackLayout>
-        <Label Text="Ingrese su Nombre" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Entry x:Name="Entnombre"
-               Placeholder="Nombre"
-               FontSize="Medium"
-               Margin="10,5,0,0"
-               BackgroundColor="Beige"></Entry>
-        
-        <Label Text="Ingrese su Telefono" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Entry x:Name="Enttelefono"
-               Placeholder="Telefono"
-               FontSize="Medium"
-               Margin="10,5,0,0"
-               BackgroundColor="Beige"></Entry>
-        
-        <Label Text="Ingrese su ubicacion Actual" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Entry x:Name="Entubicacion"
-               Placeholder="Ubicacion"
-               FontSize="Medium"
-               Margin="10,5,0,0"
-               BackgroundColor="Beige"></Entry>
-        
-        <Label Text="Ingrese su Destino" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Entry x:Name="Entdestino"
-               Placeholder="destino"
-               FontSize="Medium"
-               Margin="10,5,0,0"
-               BackgroundColor="Beige"></Entry>
-        
-        <Label Text="Ingrese el metodo de pago" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Entry x:Name="Entpago"
-               Placeholder="pago"
-               FontSize="Medium"
-               Margin="10,5,0,0"
-               BackgroundColor="Beige"></Entry>
+             Title="Reservacion"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Terminal Norte"
+                   FontSize="Title"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   HeightRequest="50"
+                   WidthRequest="300"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   ></Label>
+            <Image Source="terminalnorte.jpg"
+              HeightRequest="280"
+                   WidthRequest="450"></Image>
+            <Button Text="Ver Destinos" TextColor="Salmon" WidthRequest="300" x:Name="btnnorte" Clicked="btnnorte_Clicked" ></Button>
+            
 
-        <Label Text="Eleccion del Trasporte" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Label Text="Asientos disponibles" 
-               FontSize="Title"
-               TextColor="Black"
-               HorizontalTextAlignment="Center"
-               BackgroundColor="White"></Label>
-        <Button Text="Reservar" Margin="5" ></Button>
-        <Button Text="Editar"></Button>
-        <Button Text="Eliminar"></Button>
-
-    </VerticalStackLayout>
+            <Label Text="Terminal Sur"
+                   FontSize="Title"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   HeightRequest="100"
+                   WidthRequest="2000"
+                   FontAttributes="Bold"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   ></Label>
+            <Image Source="terminalsur.jpg" 
+                   HeightRequest="280"
+                   WidthRequest="450"></Image>
+            <Button Text="Ver Destinos" TextColor="Salmon" WidthRequest="300" x:Name="btnsur" Clicked="btnsur_Clicked"></Button>
+            
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

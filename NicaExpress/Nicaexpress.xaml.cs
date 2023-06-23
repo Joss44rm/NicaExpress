@@ -1,27 +1,26 @@
 namespace NicaExpress;
 
-public partial class Nicaexpress : ContentPage
+public partial class Nicaexpress : FlyoutPage
 {
 	public Nicaexpress()
 	{
 		InitializeComponent();
-	}
-
-    private async void BtnUsuario_Clicked(object sender, EventArgs e)
+        flyoutpage.collectionview.SelectionChanged +=
+         Collectionview_SelectionChanged;
+    }
+    private void Collectionview_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        await this.Navigation.PushAsync(new Vistas.Usuario());
+        var item = e.CurrentSelection.FirstOrDefault() as Data.FlyoutPageItem;
+        if (item != null)
+        {
+            Detail = new
+            NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+            if (!((IFlyoutPageController)this).ShouldShowSplitMode)
+            {
+                IsPresented = false;
+            }
+        }
     }
 
-    private async void BtnTransporte_Clicked(object sender, EventArgs e)
-    {
-        await this.Navigation.PushAsync(new Vistas.Transporte());
-    }
 
-    private async void BtnReservacion_Clicked(object sender, EventArgs e)
-    {
-        await this.Navigation.PushAsync(new Vistas.Reservacion());
-    }
-
-
-  
 }

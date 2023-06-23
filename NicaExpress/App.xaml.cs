@@ -6,8 +6,8 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		//MainPage = new AppShell();
+		MainPage = new Nicaexpress();
 
-		MainPage = new NavigationPage(new Nicaexpress());
+		
 	}
 }
